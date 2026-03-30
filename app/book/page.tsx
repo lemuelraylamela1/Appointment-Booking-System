@@ -16,7 +16,6 @@ import {
   Eye,
   Bone,
 } from "lucide-react";
-import next from "next";
 
 // Mock Data
 const specialties = [
@@ -209,8 +208,8 @@ export default function Booking() {
               No doctors found
             </h3>
             <p className="text-slate-500">
-              We couldn&lsquo;t find any specialists for this category. Please
-              go back and try another.
+              We couldn&apos;t find any specialists for this category. Please go
+              back and try another.
             </p>
           </div>
         ) : (
@@ -478,7 +477,7 @@ export default function Booking() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 pt-28 pb-10 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-slate-50 py-20 px-4">
       <div className="max-w-3xl mx-auto">
         {step < 5 && (
           <div className="text-center mb-10">
@@ -494,7 +493,7 @@ export default function Booking() {
         <div className="bg-slate-50">
           {renderStepIndicator()}
 
-          <div className="min-h-[400px]">
+          <div className="min-h-100">
             {step === 1 && renderStep1()}
             {step === 2 && renderStep2()}
             {step === 3 && renderStep3()}
